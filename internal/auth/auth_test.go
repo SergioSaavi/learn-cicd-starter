@@ -1,11 +1,11 @@
 package auth
 
-import (
+//import (
 	"net/http"
 	"testing"
 )
 
-func TestGetAPIKey(t *testing.T) {
+fu//nc TestGetAPIKey(t *testing.T) {
 	headers := http.Header{}
 	//headers.Set("Authorization", "ApiKey test-key")
 	//key, err := GetAPIKey(headers)
