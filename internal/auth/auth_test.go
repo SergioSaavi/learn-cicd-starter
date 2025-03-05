@@ -1,18 +1,18 @@
 package auth
 
-//import (
+import (
 	"net/http"
 	"testing"
 )
 
-fu//nc TestGetAPIKey(t *testing.T) {
+func TestGetAPIKey(t *testing.T) {
 	headers := http.Header{}
-	//headers.Set("Authorization", "ApiKey test-key")
-	//key, err := GetAPIKey(headers)
+	headers.Set("Authorization", "ApiKey test-key")
+	key, err := GetAPIKey(headers)
 
 	if err != nil {
 		t.Errorf("unexpected error: %v", err)
-	//}
+	}
 
 	if key != "test-key" {
 		t.Errorf("expected 'test-key', got '%s'", key)
